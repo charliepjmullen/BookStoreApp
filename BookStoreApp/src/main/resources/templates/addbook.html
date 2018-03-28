@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Book</title>
+</head>
+<body>
+<h1>Add a Book </h1>
+ <form th:action="@{/addBook}" method="post">
+         <div><label> Book Title : <input type="text" name="title"/> </label></div>
+         <div><label> Author: <input type="text" name="author"/> </label></div>
+         <div><label> Price: <input type="text" name="price"/> </label></div>
+         <div><label> Category: <input type="text" name="category"/> </label></div>
+         <div><label> Image: <input type="file" name="image"/> </label></div>
+         <div><label> Quantity: <input type="number" name="quantity"/></label></div>
+         <div><input type="submit" value="Add Book To System"/>    </div>
+     </form>
+</body>
+</html>

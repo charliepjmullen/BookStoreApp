@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Book Stroer Application</title>
+</head>
+<body>
+<h1>Book Store</h1>
+<a href = "adminregister">Admin Login</a>
+<a href = "#">User Login</a>
+
+<form th:action="@{/searchbook}" method="post">
+         <div><input type="text" placeholder="Search for Author,Topic or Title" name="adminname"/></div>
+         <div><input type="submit" value="Search"/>    </div>
+     </form>
+     
+     <h1>Here's some of our Books</h1>
+
+</body>
+</html>

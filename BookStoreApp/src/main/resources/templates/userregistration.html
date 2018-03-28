@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User Registration</title>
+</head>
+<body>
+        <h3>Welcome, Enter The User Details</h3>
+ 
+        
+         <form th:action="@{/addAdmin}" method="post">
+         <div><label> Username : <input type="text" name="adminname"/> </label></div>
+         <div><label> Password: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="password" name="admin_password"/> </label></div>
+         <div><label> Confirm Password: <input type="password" name="admin_password_confirm"/> </label></div>
+         <div><input type="submit" value="Register Admin"/>    </div>
+     </form>
+</body>
+</html>

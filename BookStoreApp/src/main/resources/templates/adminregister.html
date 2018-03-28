@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+        <h3>Welcome, Enter The Admin Details</h3>
+       <!--  <form:form method="POST" action="addAdmin" modelAttribute="admin">
+             <table>
+                <tr>
+                    <td><form:label path="adminname">Username</form:label></td>
+                    <td><form:input path="adminname"/></td>
+                </tr>
+                <tr>
+                    <td><form:label path=admin_password>Password</form:label></td>
+                    <td><form:input path="admin_password"/></td>
+                </tr>
+                <tr>
+                    <td><form:label path="admin_password_confirm">Confirm Password</form:label></td>
+                    <td><form:input path="admin_password_confirm"/></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit"/></td>
+                </tr>
+            </table>
+        </form:form> -->
+        
+         <form th:action="@{/addAdmin}" method="post">
+         <div><label> Admin username : <input type="text" name="adminname"/> </label></div>
+         <div><label> Password: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="password" name="admin_password"/> </label></div>
+         <div><label> Confirm Password: <input type="password" name="admin_password_confirm"/> </label></div>
+         <div><input type="submit" value="Register Admin"/>    </div>
+     </form>
+</body>
+</html>
